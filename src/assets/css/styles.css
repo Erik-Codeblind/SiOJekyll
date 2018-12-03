@@ -1,85 +1,127 @@
 html {
-  font-size: 16px;
+  font-size: 18px;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   line-height: 1.5em;
-  color: #193419;
-}
+  color: #222; }
 
 body {
-  background-color: #F7F7E4;
-}
+  background: #F7F7E4; }
 
+a {
+  text-decoration: none; }
+
+h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif; }
+
+#footer {
+  padding: 30px 12px;
+  color: #F7F7E4;
+  background: #222; }
+
+#site-name {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: .5em; }
+
+#copyright {
+  font-size: .76rem;
+  text-align: center;
+  line-height: 1rem; }
+
+#main {
+  padding: 0; }
+
+@media screen and (min-width: 760px) {
+  #main {
+    text-align: left; } }
 #page {
   width: 100%;
-  min-width: 320px;
   max-width: 760px;
-  margin: 0 auto;
-}
-
-.post-image {
-  padding: 3px;
-  background: #000;
-}
+  margin: 0 auto; }
 
 .post-image img {
   display: block;
-  width: 100%;
   height: auto;
-}
+  width: 100%; }
 
 .post-date {
   font-weight: bold;
   font-size: .85rem;
   text-align: center;
-  margin: 0;
-}
+  margin: .75rem 0; }
+
+.post-image {
+  text-align: center;
+  background: #222;
+  padding: 5px;
+  margin: 12px auto;
+  max-width: 92%; }
+
+.post-article {
+  padding: 16px;
+  text-align: justify;
+  text-justify: inter-character; }
+  .post-article h1 {
+    margin: 0;
+    line-height: 1.35em; }
+  .post-article p {
+    text-indent: 2em;
+    margin: 0 0 .3rem 0; }
+
+.post-links {
+  font-weight: bold;
+  /*display: flex;*/ }
+
+.post-links__link {
+  display: block;
+  padding: 16px;
+  color: #222; }
+
+.post-links__link:hover {
+  background: #444;
+  color: #F7F7E4; }
 
 #nav-main {
-  background: #193419;
+  background: #222;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 3px solid #222222;
-}
+  text-transform: uppercase;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif; }
 
 #nav-main li {
-  flex-grow: 1;
-}
+  flex-grow: 1; }
 
 .nav-main__contact,
 .nav-main__less,
 .nav-main__feed {
-  display: none;
-}
+  display: none; }
 
 @media only screen and (min-width: 480px) {
   .nav-main__contact,
   .nav-main__feed {
-    display: block;
-  }
-  .nav-main__more {
-    display: none;
-  }
-}
+    display: block; }
 
+  .nav-main__more {
+    display: none; } }
 #nav-main.expanded {
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 #nav-main.expanded .nav-main__more {
-  display: none;
-}
+  display: none; }
 
 #nav-main.expanded .nav-main__less,
 #nav-main.expanded .nav-main__contact,
 #nav-main.expanded .nav-main__feed {
-  display: block;
-}
+  display: block; }
 
 #nav-main.expanded li {
-  border-bottom: 1px solid white;
-}
+  border-bottom: 1px solid #444; }
 
 #nav-main a {
   text-align: center;
@@ -87,57 +129,10 @@ body {
   line-height: 2.5rem;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 #nav-main a:hover {
-  background: red;
-}
+  color: #222;
+  background: #ddd; }
 
-#main {
-  padding: 12px;
-  text-align: justify;
-  text-justify: inter-character;
-}
-
-@media screen and (min-width: 480px) {
-  #main {
-    text-align: left;
-  }
-}
-
-h1 {
-  font-size: 1.3rem;
-  text-align: center;
-}
-
-#footer {
-  padding: 80px 12px;
-  color: #F7F7E4;
-  background-color: #193419;
-}
-
-.post-links {
-  font-size: .85rem;
-}
-
-.post-links .prev {
-  text-align: left;
-}
-
-.post-links .next {
-  text-align: right;
-}
-
-#site-name {
-  font-weight: bold;
-  font-size: 1.6rem;
-  text-align: center;
-  margin-bottom: .25em;
-}
-
-#copyright {
-  font-size: .6rem;
-  text-align: center;
-  line-height: 1rem;
-}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,54 @@
+@import "../vars";
+
+.post-image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.post-date {
+  font-weight: bold;
+  font-size: .85rem;
+  text-align: center;
+  margin: .75rem 0;
+}
+
+.post-image {
+  text-align: center;
+  background: $black;
+  padding: 5px;
+  margin: 12px auto;
+  max-width: 92%;
+}
+
+.post-article {
+  h1 {
+    margin: 0;
+    line-height: 1.35em;
+  }
+
+  p {
+    text-indent: 2em;
+    margin: 0 0 .3rem 0;
+  }
+
+  padding: 16px;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+.post-links {
+  font-weight: bold;
+  /*display: flex;*/
+}
+
+.post-links__link {
+  display: block;
+  padding: 16px;
+  color: $black;
+}
+
+.post-links__link:hover {
+  background: $darkGrey;
+  color: $white;
+}

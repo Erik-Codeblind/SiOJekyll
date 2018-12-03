@@ -2,13 +2,15 @@
   function mobileNav() {
     var nav = document.getElementById('nav-main');
 
-    document.getElementById('nav-toggle__more').addEventListener('click', function () {
-      nav.classList.add('expanded');
-    });
+    document.getElementById('nav-toggle__more')
+      .addEventListener('click', function () {
+        nav.classList.add('expanded');
+      });
 
-    document.getElementById('nav-toggle__less').addEventListener('click', function () {
-      nav.classList.remove('expanded');
-    });
+    document.getElementById('nav-toggle__less')
+      .addEventListener('click', function () {
+        nav.classList.remove('expanded');
+      });
 
     function watchResize(el) {
       function unsetExpanded(mQ) {

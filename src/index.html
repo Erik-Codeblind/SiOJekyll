@@ -8,35 +8,44 @@
   <script src="assets/js/scripts.js"></script>
 </head>
 <body>
+<header id="header">
+  <ul id="nav-main">
+    <li class="nav-main__less"><a id="nav-toggle__less" href="#">...Less</a></li>
+    <li><a class="nav-main__home" href="/">Home</a></li>
+    <li><a class="nav-main__posts" href="/">Posts</a></li>
+    <li><a class="nav-main__random" href="/">Random</a></li>
+    <li class="nav-main__more"><a id="nav-toggle__more" href="#">More...</a></li>
+    <li class="nav-main__contact"><a href="/">Contact</a></li>
+    <li class="nav-main__feed"><a href="/">Feed</a></li>
+  </ul>
+</header>
 <div id="page">
-  <header id="header">
-    <ul id="nav-main">
-      <li><a class="nav-main__nowish" href="/">Nowish</a></li>
-      <li><a class="nav-main__then" href="/">Then</a></li>
-      <li><a class="nav-main__whenever" href="/">Whenever</a></li>
-      <li class="nav-main__more"><a id="nav-toggle__more" href="#">More...</a></li>
-      <li class="nav-main__contact"><a href="/">Contact</a></li>
-      <li class="nav-main__feed"><a href="/">Feed</a></li>
-      <li class="nav-main__less"><a id="nav-toggle__less" href="#">Less...</a></li>
-    </ul>
-  </header>
   <main id="main">
     <section class="post">
       <div class="post-image">
         <img src="./images/rainy-day.jpg" alt="">
       </div>
-      <h1>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing</h1>
-      <p class="post-date">November 12th, 2018</p>
-      <p>Integer suscipit tellus nec eros fringilla maximus. Duis convallis magna sed nulla viverra,
-        nec pellentesque enim dictum. Suspendisse ex risus, ornare vel hendrerit id, tempus vitae
-        tortor. Donec id dolor convallis, tristique metus sit amet, porta massa. Etiam ac lorem ultrices,
-        varius magna in, ullamcorper magna. Praesent volutpat placerat euismod. Proin porta, urna quis
-        sodales semper, felis elit aliquet magna, ac placerat nisl dolor at purus. Aenean quis arcu
-        vel dui mattis dignissim ac ut risus. Duis blandit vel sapien vel laoreet. Suspendisse
-        aliquet venenatis venenatis.</p>
+      <article class="post-article">
+        <h1>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing</h1>
+        <div class="post-date">November 12th, 2018</div>
+        <p>Integer suscipit tellus nec eros fringilla maximus. Duis convallis magna sed nulla viverra,
+          nec pellentesque enim dictum. Suspendisse ex risus, ornare vel hendrerit id, tempus vitae
+          tortor. Donec id dolor convallis, tristique metus sit amet, porta massa. Etiam ac lorem ultrices,
+          varius magna in, ullamcorper magna. Praesent volutpat placerat euismod. Proin porta, urna quis
+          sodales semper, felis elit aliquet magna, ac placerat nisl dolor at purus. Aenean quis arcu
+          vel dui mattis dignissim ac ut risus. Duis blandit vel sapien vel laoreet. Suspendisse
+          aliquet venenatis venenatis.</p>
+        <p>Aliquam eget laoreet velit. Donec sit amet elementum mi, sit amet rutrum nisi. Vestibulum a commodo
+          dolor. Duis viverra neque a enim euismod tristique. Pellentesque pulvinar imperdiet laoreet.
+          Nunc consequat vitae est non maximus. Sed laoreet ullamcorper orci ac luctus. Vivamus sodales
+          nunc orci, eget suscipit sapien rhoncus sed. In a luctus elit. Ut euismod ex eu nunc semper tristique.
+          Etiam mattis elit dui, molestie lobortis nibh malesuada sed. Praesent rutrum dolor at arcu tincidunt,
+          in consectetur tortor hendrerit. Mauris iaculis placerat condimentum. </p>
+      </article>
       <div class="post-links">
-        <div class="prev">< Previous: Some kind of a title</div>
-        <div class="next">Next: Sometimes a title may be so long it is annoying ></div>
+        <a href="#" class="post-links__link prev">&#9664; <strong>10.20.2017.</strong> Some kind of a title.</a>
+        <a href="#" class="post-links__link next">&#9654; <strong>01.20.2018.</strong> Sometimes a title may be so
+          long it is annoying.</a>
       </div>
     </section>
   </main>

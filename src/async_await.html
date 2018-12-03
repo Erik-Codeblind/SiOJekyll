@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Async/Await</title>
+  <script>
+    async function foo() {
+      const p = await new Promise((resolve) => {
+        setTimeout(() => resolve('BOING!'), 2000);
+      });
+
+      console.log(p);
+      return p;
+    }
+
+    foo().then(console.log);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

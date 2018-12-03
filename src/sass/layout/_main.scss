@@ -1,0 +1,11 @@
+@import "../vars";
+
+#main {
+  padding: 0;
+}
+
+@media screen and (min-width: $desktop) {
+  #main {
+    text-align: left;
+  }
+}
