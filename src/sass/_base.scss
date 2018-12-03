@@ -20,3 +20,23 @@ h1 {
   text-align: center;
   font-family: $sans;
 }
+
+blockquote {
+  margin: 2em;
+  padding: 12px 36px 12px 24px;
+  background: lighten($white, 4%);
+  border-left: 12px solid $darkGrey;
+  font-style: italic;
+  color: $darkGrey;
+
+  -webkit-box-shadow: 3px 4px 7px 1px rgba(221,221,221,1);
+  -moz-box-shadow: 3px 4px 7px 1px rgba(221,221,221,1);
+  box-shadow: 3px 4px 7px 1px rgba(221,221,221,1);
+
+  .citation {
+    text-align: right;
+    font-style: normal;
+    font-size: .85rem;
+    font-weight: bold;
+  }
+}

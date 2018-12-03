@@ -1,6 +1,6 @@
 (function () {
   function mobileNav() {
-    var nav = document.getElementById('nav-main');
+    const nav = document.getElementById('nav-main');
 
     document.getElementById('nav-toggle__more')
       .addEventListener('click', function () {
@@ -20,7 +20,7 @@
       }
 
       if (matchMedia) {
-        var mQ = window.matchMedia("(min-width: 480px)");
+        const mQ = window.matchMedia("(min-width: 480px)");
         mQ.addListener(unsetExpanded);
         unsetExpanded(mQ);
       }
@@ -29,7 +29,16 @@
     watchResize(nav);
   }
 
+  function setPhotoOrientation() {
+    const el = document.querySelector('.post-image img');
+
+    (el.height > el.width) ?
+      el.parentElement.classList.add('vertical') :
+      el.parentElement.classList.add('horizontal');
+  }
+
   window.addEventListener('load', function () {
     mobileNav();
+    setPhotoOrientation();
   });
 })();
