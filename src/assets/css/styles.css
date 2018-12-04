@@ -108,12 +108,14 @@ blockquote {
 nav {
   background: #222;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   text-transform: uppercase;
-  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif; }
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font-size: .85rem;
+  border-bottom: 1px solid #222; }
   nav a {
     flex-grow: 1;
     text-align: center;
@@ -128,10 +130,12 @@ nav {
       color: #222;
       background: #ddd; }
     @media only screen and (min-width: 480px) {
-      nav a.contact, nav a.feed {
-        display: block; }
-      nav a.more {
-        display: none; } }
+      nav a {
+        flex-grow: 1; }
+        nav a.contact, nav a.feed {
+          display: block; }
+        nav a.more {
+          display: none; } }
 
 nav.expanded {
   flex-direction: column; }
@@ -141,5 +145,10 @@ nav.expanded {
       display: block; }
     nav.expanded a.more {
       display: none; }
+
+@media only screen and (min-width: 480px) {
+  nav a {
+    font-size: .76rem;
+    line-height: 1.76rem; } }
 
 /*# sourceMappingURL=styles.css.map */

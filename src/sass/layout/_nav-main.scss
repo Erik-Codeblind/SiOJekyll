@@ -3,12 +3,14 @@
 nav {
   background: $black;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   text-transform: uppercase;
   font-family: $sans;
+  font-size: .85rem;
+  border-bottom: 1px solid $black;
 
   a {
     flex-grow: 1;
@@ -32,6 +34,8 @@ nav {
 
     // When the screen is wide enough, show the extended menu items and hide the "more..." tab.
     @media only screen and (min-width: 480px) {
+      flex-grow: 1;
+
       &.contact,
       &.feed {
         display: block;
@@ -60,6 +64,16 @@ nav.expanded {
     // Hide "More..." tab when in extended view.
     &.more {
       display: none;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 480px) {
+  nav {
+    a {
+      font-size: .76rem;
+      line-height: 1.76rem;
     }
   }
 }
