@@ -1,13 +1,14 @@
 (function () {
   function mobileNav() {
-    const nav = document.getElementById('nav-main');
+    const nav = document.getElementById('navMain');
 
-    document.getElementById('nav-toggle__more')
+    document.getElementById('toggleMore')
       .addEventListener('click', function () {
         nav.classList.add('expanded');
+        alert('click');
       });
 
-    document.getElementById('nav-toggle__less')
+    document.getElementById('toggleLess')
       .addEventListener('click', function () {
         nav.classList.remove('expanded');
       });
