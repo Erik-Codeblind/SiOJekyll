@@ -2,10 +2,7 @@
 
 #main {
   padding: 0;
-}
-
-@media screen and (min-width: $desktop) {
-  #main {
-    text-align: left;
-  }
+  width: 100%;
+  max-width: $desktop;
+  margin: 0 auto;
 }
