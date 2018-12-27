@@ -1,0 +1,81 @@
+@import "vars";
+
+html {
+  font-family: $sans;
+  line-height: 1.5em;
+  color: $black;
+}
+
+body {
+  background: $white;
+  font-family: $sys;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 1.75rem;
+  font-weight: 500;
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+blockquote {
+  margin: 1.5em 0px;
+  padding: 12px 36px 3px 24px;
+  background: lighten($white, 4%);
+  border-left: 12px solid $darkGrey;
+  font-style: italic;
+  color: $darkGrey;
+
+  -webkit-box-shadow: 3px 4px 7px 1px rgba(221, 221, 221, 1);
+  -moz-box-shadow: 3px 4px 7px 1px rgba(221, 221, 221, 1);
+  box-shadow: 3px 4px 7px 1px rgba(221, 221, 221, 1);
+
+  .citation {
+    text-align: right;
+    font-style: normal;
+    font-size: .85rem;
+    font-weight: 600;
+  }
+}
+
+ul {
+  &.circles {
+    list-style: circle;
+  }
+}
+
+ol {
+  &.wZeros {
+    list-style: decimal-leading-zero;
+  }
+}
+
+ol, ul {
+  &.hanging {
+    list-style: inherit outside none;
+    margin-left: 0;
+    padding-left: .3rem;
+    li {
+      padding-left: .3rem;
+    }
+  }
+}
