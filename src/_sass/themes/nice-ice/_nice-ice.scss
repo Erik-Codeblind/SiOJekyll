@@ -1,0 +1,48 @@
+$nice-ice__color1: rgba(97, 102, 102, 1);
+$nice-ice__color2: rgba(35, 34, 35, 1);
+$nice-ice__color3: rgba(203, 212, 225, 1);
+$nice-ice__color4: rgba(241, 247, 252, 1);
+$nice-ice__color5: #eaf6ff;
+
+body.theme--nice-ice {
+  color: $nice-ice__color1;
+  background: $nice-ice__color5;
+
+  blockquote {
+    background: $nice-ice__color4;
+    border-color: $nice-ice__color2;
+    color: $nice-ice__color2;
+  }
+
+  nav {
+    background: $nice-ice__color2;
+    border-bottom: 1px solid $nice-ice__color2;
+
+    a {
+      &:hover {
+        color: $nice-ice__color2;
+        background: $nice-ice__color3;
+      }
+    }
+  }
+
+  nav.expanded {
+    a {
+      border-bottom: 1px solid $nice-ice__color1;
+    }
+  }
+
+  .post-links__link {
+    color: $nice-ice__color2;
+  }
+
+  .post-links__link:hover {
+    background: $nice-ice__color1;
+    color: $nice-ice__color4;
+  }
+
+  #footer {
+    color: $nice-ice__color4;
+    background: $nice-ice__color2;
+  }
+}

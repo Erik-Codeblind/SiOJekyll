@@ -12,7 +12,9 @@ $sans: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sa
 "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 
 // Breakpoints
-$mobile: 375px;
-$desktop: 760px;
+$sm: 375px;
+$med: 485px;
+$lg: 760px;
+$huge: 1024px;
 
 $maxContentWidth: 960px; // <= Old school!

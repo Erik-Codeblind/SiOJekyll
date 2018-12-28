@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: $lg) {
   .post-image {
     margin: 24px auto;
 
@@ -68,7 +68,7 @@
   font-weight: bold;
 }
 
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: $lg) {
   .post-links {
     display: flex;
   }

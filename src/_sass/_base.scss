@@ -1,15 +1,11 @@
 @import "vars";
 
-html {
-  font-family: $sans;
-  line-height: 1.5em;
-  color: $black;
-}
-
 body {
   background: $white;
   font-family: $sys;
   font-weight: 300;
+  line-height: 1.5em;
+  color: $black;
 }
 
 a {
@@ -34,12 +30,15 @@ h3 {
   margin-top: 1.75rem;
   font-weight: 500;
   font-size: 1.15rem;
-  text-align: center;
+  text-align: left;
 }
 
 blockquote {
   margin: 1.5em 0px;
   padding: 12px 36px 3px 24px;
+  @media screen and (min-width: $med) {
+    padding: 22px 56px 9px 36px;
+  }
   background: lighten($white, 4%);
   border-left: 12px solid $darkGrey;
   font-style: italic;
@@ -71,11 +70,13 @@ ol {
 
 ol, ul {
   &.hanging {
-    list-style: inherit outside none;
-    margin-left: 0;
-    padding-left: .3rem;
-    li {
-      padding-left: .3rem;
+    @media (min-width: $med) {
+      list-style: inherit outside none;
+      margin-left: 0;
+      padding-left: 1rem;
+      li {
+        padding-left: .1rem;
+      }
     }
   }
 }
